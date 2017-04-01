@@ -1,25 +1,25 @@
-from Tkinter import *
+from tkinter import *
 import csv
-
+#rrr
 def Quitter():
     jeu.destroy()
 def Quitter2():
     jeu2.destroy()
-    
+
 jeu=Tk()
 jeu.geometry('700x400+300+270')
 
 
 Quitter=Button(jeu, text="Quitter", command=Quitter).grid()
-	
+
 monFich = []
-	
-		
-def chargerCSV(a) : 
+
+
+def chargerCSV(a) :
 	with open(a, "r") as file:
 		reader= csv.reader(file)
 		for row in reader :
-			monFich.append(row)		
+			monFich.append(row)
 		file.close()
 
 def VerifRep1():
@@ -29,7 +29,7 @@ def VerifRep1():
     else:
         win=1
     suite(win)
-    
+
 def VerifRep2():
     global Bonne_Reponse
     if Bonne_Reponse=='2':
@@ -46,11 +46,11 @@ def VerifRep3():
         win=1
     suite(win)
 
-               
+
 def Qsuivant(n):
     global Bonne_Reponse
     Question=StringVar()
-    Question.set(monFich[n][0])  
+    Question.set(monFich[n][0])
     Rep_1=StringVar()
     Rep_1.set(monFich[n][1])
     Rep_2=StringVar()
@@ -77,7 +77,7 @@ def suite(w):
         n+=1
 
 #Qsuivant(n)
-        
+
 chargerCSV("ExCSV.csv")
 n=0
 Qsuivant(0)
