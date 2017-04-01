@@ -17,7 +17,7 @@ def Regles():
     f_regles=Toplevel() #cree une fenetre au dessus de la premiere
     f_regles.grab_set() #s'assure "d'attraper" les commandes clavier et souris
     f_regles.geometry('700x400+300+270')
-    a=Button(f_regles,text='Fermer fenêtre secondaire !',command=f_regles.destroy)
+    a=Button(f_regles,text='Fermer fenÃªtre secondaire !',command=f_regles.destroy)
     a.pack()
     rules=fich_regles.read()
     print(rules)

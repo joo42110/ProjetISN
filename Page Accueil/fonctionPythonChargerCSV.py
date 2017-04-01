@@ -1,6 +1,6 @@
 from tkinter import *
 import csv
-#rrrsalu
+
 def Quitter():
     jeu.destroy()
 def Quitter2():
@@ -78,7 +78,7 @@ def suite(w):
 
 #Qsuivant(n)
 
-chargerCSV("ExCSV.csv")
+chargerCSV("QuestionsCSV.csv")
 n=0
 Qsuivant(0)
 
