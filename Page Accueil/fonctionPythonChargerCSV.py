@@ -1,6 +1,6 @@
 from tkinter import *
 import csv
-#rrr
+#rrrsalu
 def Quitter():
     jeu.destroy()
 def Quitter2():
